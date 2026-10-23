@@ -1,0 +1,10 @@
+id = "tdd_budget"
+category = "tdd"
+fixture = "ledger"
+language = "python"
+visibility = "public"
+source = "forge/bench/items.toml"
+
+[mutants]
+real_summed_both_signs = "Real forge failure: counts income against the budget too"
+at_limit_is_over = "Spending exactly at the limit is reported as over"

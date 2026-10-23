@@ -1,0 +1,15 @@
+id = "tdd_average_transaction_explicit"
+category = "tdd-explicit"
+fixture = "ledger"
+language = "python"
+visibility = "public"
+source = "forge/bench/items.toml"
+# tdd_average_transaction with the test file named as something to write. The original reads
+# "implement X so tests/... passes", which a capable agent can fairly take
+# to mean the test already exists (seen 2026-10-04, claude-noforge run).
+variant_of = "tdd_average_transaction"
+
+[mutants]
+spending_only = "Averages spending only, the exact trap the task warns about"
+no_rounding = "Returns the unrounded float"
+no_test_written = "Implementation without the test the TDD task requires"

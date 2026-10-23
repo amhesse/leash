@@ -1,0 +1,10 @@
+id = "small_edit_single"
+category = "prose-single-small"
+fixture = "ledger"
+language = "python"
+visibility = "public"
+source = "forge/bench/items.toml"
+
+[mutants]
+no_abs = "Floor division on a negative: -150 becomes \"-$-2.50\""
+touched_parse_amount = "Also 'fixed' parse_amount, which the task said not to change"

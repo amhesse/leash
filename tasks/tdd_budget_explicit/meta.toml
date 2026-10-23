@@ -1,0 +1,15 @@
+id = "tdd_budget_explicit"
+category = "tdd-explicit"
+fixture = "ledger"
+language = "python"
+visibility = "public"
+source = "forge/bench/items.toml"
+# tdd_budget with the test file named as something to write. The original reads
+# "implement X so tests/... passes", which a capable agent can fairly take
+# to mean the test already exists (seen 2026-10-04, claude-noforge run).
+variant_of = "tdd_budget"
+
+[mutants]
+real_summed_both_signs = "Real forge failure: counts income against the budget too"
+at_limit_is_over = "Spending exactly at the limit is reported as over"
+no_test_written = "Implementation without the test the TDD task requires"

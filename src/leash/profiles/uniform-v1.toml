@@ -1,0 +1,4 @@
+# Every category present in the results weighs the same. The default headline.
+name = "uniform-v1"
+description = "Equal weight for every task category present in the results"
+uniform = true

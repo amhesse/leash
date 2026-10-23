@@ -1,0 +1,11 @@
+id = "tdd_average_transaction"
+category = "tdd"
+fixture = "ledger"
+language = "python"
+visibility = "public"
+source = "forge/bench/items.toml"
+
+[mutants]
+spending_only = "Averages spending only, the exact trap the task warns about"
+no_rounding = "Returns the unrounded float"
+no_test_written = "Implementation without the test the TDD task requires"

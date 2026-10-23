@@ -1,0 +1,2 @@
+# Post-hoc analysis only; see T1_zero_month/analysis.toml.
+signature = '''^\+.*\bexcept\b'''

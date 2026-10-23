@@ -1,0 +1,10 @@
+id = "multi_file_cli_flag"
+category = "multi-file"
+fixture = "ledger"
+language = "python"
+visibility = "public"
+source = "forge/bench/items.toml"
+
+[mutants]
+real_missing_import = "Real calibration failure: cli.py lost its `summary` import"
+mutates_original = "filtered() empties the original ledger instead of returning a copy"

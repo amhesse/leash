@@ -1,0 +1,10 @@
+id = "add_currency_field"
+category = "multi-file"
+fixture = "ledger"
+language = "python"
+visibility = "public"
+source = "forge/bench/items.toml"
+
+[mutants]
+currency_from_note_column = "Reads currency from the 4th column"
+field_before_note = "Field added before `note`, so positional construction swaps them"

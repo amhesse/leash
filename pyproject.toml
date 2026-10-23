@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "leashbench"
+version = "0.1.0"
+description = "How long a leash can you give an AI coding model? A delegation-safety benchmark."
+readme = "README.md"
+requires-python = ">=3.11"
+# Stdlib only, like forge: nothing to install beyond the harness under test.
+dependencies = []
+
+[project.scripts]
+leash = "leash.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+leash = ["profiles/*.toml"]

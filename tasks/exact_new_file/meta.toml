@@ -1,0 +1,10 @@
+id = "exact_new_file"
+category = "exact-spec"
+fixture = "ledger"
+language = "python"
+visibility = "public"
+source = "forge/bench/items.toml"
+
+[mutants]
+trailing_space = "Content right except a trailing space - byte-exact must reject"
+single_quotes = "Equivalent Python, different bytes"

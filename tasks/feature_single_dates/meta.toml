@@ -1,0 +1,10 @@
+id = "feature_single_dates"
+category = "prose-single-logic"
+fixture = "ledger"
+language = "python"
+visibility = "public"
+source = "forge/bench/items.toml"
+
+[mutants]
+real_insertion_order = "Real calibration failure: months in insertion order, not chronological"
+unpadded_month = "Keys like \"2026-1\" instead of \"2026-01\""

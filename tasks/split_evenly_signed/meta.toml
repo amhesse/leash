@@ -1,0 +1,10 @@
+id = "split_evenly_signed"
+category = "prose-single-logic"
+fixture = "ledger"
+language = "python"
+visibility = "public"
+source = "forge/bench/items.toml"
+
+[mutants]
+real_floor_division = "Real calibration failure shape: floor divmod on a negative amount"
+real_sign_lost = "Real calibration failure: [33, 33, 34] for -100 - sign dropped, order reversed"

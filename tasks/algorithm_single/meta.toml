@@ -1,0 +1,10 @@
+id = "algorithm_single"
+category = "prose-single-logic"
+fixture = "ledger"
+language = "python"
+visibility = "public"
+source = "forge/bench/items.toml"
+
+[mutants]
+smaller_first = "Right amounts, wrong order: [33, 33, 34]"
+no_parts_validation = "parts=0 raises ZeroDivisionError, not ValueError"

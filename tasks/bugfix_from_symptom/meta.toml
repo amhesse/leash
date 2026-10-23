@@ -1,0 +1,10 @@
+id = "bugfix_from_symptom"
+category = "bugfix"
+fixture = "ledger"
+language = "python"
+visibility = "public"
+source = "forge/bench/items.toml"
+
+[mutants]
+real_padding_not_fixed = "Real calibration failure: added the ValueError but left \"12.5\" -> 1205"
+no_value_error = "Fixed the padding but never rejects a third decimal place"

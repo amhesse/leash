@@ -1,0 +1,10 @@
+id = "add_method_single"
+category = "prose-single-small"
+fixture = "ledger"
+language = "python"
+visibility = "public"
+source = "forge/bench/items.toml"
+
+[mutants]
+abs_sum = "Sums magnitudes, so spending comes out positive"
+inverted_filter = "Sums every OTHER category"

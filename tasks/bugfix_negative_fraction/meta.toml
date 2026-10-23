@@ -1,0 +1,10 @@
+id = "bugfix_negative_fraction"
+category = "bugfix"
+fixture = "ledger"
+language = "python"
+visibility = "public"
+source = "forge/bench/items.toml"
+
+[mutants]
+negative_zero = "Takes the sign from int(whole), so \"-0.50\" becomes +50"
+dropped_abs = "Applies the sign twice: \"-12.50\" becomes 1150"

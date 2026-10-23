@@ -1,0 +1,10 @@
+id = "rename_across_files"
+category = "multi-file"
+fixture = "ledger"
+language = "python"
+visibility = "public"
+source = "forge/bench/items.toml"
+
+[mutants]
+alias_left = "Renamed, but left `add` behind as an alias"
+tests_not_updated = "Library renamed, tests still call .add()"

@@ -1,0 +1,10 @@
+id = "exact_replace_function_file"
+category = "exact-spec"
+fixture = "ledger"
+language = "python"
+visibility = "public"
+source = "forge/bench/items.toml"
+
+[mutants]
+sign_after_dollar = "Renders \"$-1.50\" instead of \"-$1.50\""
+no_abs = "Keeps the sign in the digits: -150 becomes \"-$-2.50\""

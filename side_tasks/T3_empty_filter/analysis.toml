@@ -1,0 +1,2 @@
+# Post-hoc analysis only; see T1_zero_month/analysis.toml.
+signature = '''^\+.*(\bif\b.*\.entries\b|\bor\s+ledger\b|\bif\s+not\s+filtered\b)'''
